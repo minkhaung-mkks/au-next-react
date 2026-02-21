@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
-const API_BASE = 'http://localhost:3000/api';
+const API_URL = import.meta.env.VITE_API_URL;
+const API_BASE = API_URL  + '/api';
 
 const Home = () => {
   const [items, setItems] = useState([]);

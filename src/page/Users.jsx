@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import './Users.css'
-
-const API_BASE = 'http://localhost:3000/api'
+const API_URL = import.meta.env.VITE_API_URL;
+const API_BASE = API_URL+'/api'
 const DEFAULT_LIMIT = 10
 
 const emptyCreateForm = {
